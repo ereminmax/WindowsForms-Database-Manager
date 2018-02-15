@@ -53,6 +53,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SPORTNUTRITIONDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPORTNUTRITIONDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TypesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +76,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TypesForm.resx">
+      <DependentUpon>TypesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -80,6 +88,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SPORTNUTRITIONDataSet1.xsc">
+      <DependentUpon>SPORTNUTRITIONDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SPORTNUTRITIONDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SPORTNUTRITIONDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SPORTNUTRITIONDataSet1.xss">
+      <DependentUpon>SPORTNUTRITIONDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
