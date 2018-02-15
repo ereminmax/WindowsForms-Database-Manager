@@ -1,6 +1,6 @@
 ﻿namespace SNapp
 {
-    partial class TypesForm
+    partial class PaymentForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,34 +29,36 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TypesForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaymentForm));
             this.sPORTNUTRITIONDataSet = new SNapp.SPORTNUTRITIONDataSet();
-            this.typesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.typesTableAdapter = new SNapp.SPORTNUTRITIONDataSetTableAdapters.TypesTableAdapter();
+            this.paymentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.paymentTableAdapter = new SNapp.SPORTNUTRITIONDataSetTableAdapters.PaymentTableAdapter();
             this.tableAdapterManager = new SNapp.SPORTNUTRITIONDataSetTableAdapters.TableAdapterManager();
-            this.typesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.paymentBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.typesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.typesDataGridView = new System.Windows.Forms.DataGridView();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.paymentBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.paymentDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.newRecord = new System.Windows.Forms.Button();
             this.save = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.sPORTNUTRITIONDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.typesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.typesBindingNavigator)).BeginInit();
-            this.typesBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.typesDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paymentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paymentBindingNavigator)).BeginInit();
+            this.paymentBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.paymentDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // sPORTNUTRITIONDataSet
@@ -64,14 +66,14 @@
             this.sPORTNUTRITIONDataSet.DataSetName = "SPORTNUTRITIONDataSet";
             this.sPORTNUTRITIONDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // typesBindingSource
+            // paymentBindingSource
             // 
-            this.typesBindingSource.DataMember = "Types";
-            this.typesBindingSource.DataSource = this.sPORTNUTRITIONDataSet;
+            this.paymentBindingSource.DataMember = "Payment";
+            this.paymentBindingSource.DataSource = this.sPORTNUTRITIONDataSet;
             // 
-            // typesTableAdapter
+            // paymentTableAdapter
             // 
-            this.typesTableAdapter.ClearBeforeFill = true;
+            this.paymentTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
@@ -82,18 +84,18 @@
             this.tableAdapterManager.OrderDetailsTableAdapter = null;
             this.tableAdapterManager.OrderListTableAdapter = null;
             this.tableAdapterManager.OrdersTableAdapter = null;
-            this.tableAdapterManager.PaymentTableAdapter = null;
+            this.tableAdapterManager.PaymentTableAdapter = this.paymentTableAdapter;
             this.tableAdapterManager.ProductsTableAdapter = null;
-            this.tableAdapterManager.TypesTableAdapter = this.typesTableAdapter;
+            this.tableAdapterManager.TypesTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = SNapp.SPORTNUTRITIONDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // typesBindingNavigator
+            // paymentBindingNavigator
             // 
-            this.typesBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.typesBindingNavigator.BindingSource = this.typesBindingSource;
-            this.typesBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.typesBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.typesBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.paymentBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.paymentBindingNavigator.BindingSource = this.paymentBindingSource;
+            this.paymentBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.paymentBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.paymentBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -105,42 +107,17 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.typesBindingNavigatorSaveItem});
-            this.typesBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.typesBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.typesBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.typesBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.typesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.typesBindingNavigator.Name = "typesBindingNavigator";
-            this.typesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.typesBindingNavigator.Size = new System.Drawing.Size(413, 25);
-            this.typesBindingNavigator.TabIndex = 0;
-            this.typesBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.paymentBindingNavigatorSaveItem});
+            this.paymentBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.paymentBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.paymentBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.paymentBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.paymentBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.paymentBindingNavigator.Name = "paymentBindingNavigator";
+            this.paymentBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.paymentBindingNavigator.Size = new System.Drawing.Size(468, 25);
+            this.paymentBindingNavigator.TabIndex = 0;
+            this.paymentBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -174,9 +151,16 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -199,49 +183,81 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // typesBindingNavigatorSaveItem
+            // bindingNavigatorAddNewItem
             // 
-            this.typesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.typesBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("typesBindingNavigatorSaveItem.Image")));
-            this.typesBindingNavigatorSaveItem.Name = "typesBindingNavigatorSaveItem";
-            this.typesBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.typesBindingNavigatorSaveItem.Text = "Save Data";
-            this.typesBindingNavigatorSaveItem.Click += new System.EventHandler(this.typesBindingNavigatorSaveItem_Click);
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
-            // typesDataGridView
+            // bindingNavigatorDeleteItem
             // 
-            this.typesDataGridView.AutoGenerateColumns = false;
-            this.typesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.typesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
+            // paymentBindingNavigatorSaveItem
+            // 
+            this.paymentBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.paymentBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("paymentBindingNavigatorSaveItem.Image")));
+            this.paymentBindingNavigatorSaveItem.Name = "paymentBindingNavigatorSaveItem";
+            this.paymentBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.paymentBindingNavigatorSaveItem.Text = "Save Data";
+            this.paymentBindingNavigatorSaveItem.Click += new System.EventHandler(this.paymentBindingNavigatorSaveItem_Click);
+            // 
+            // paymentDataGridView
+            // 
+            this.paymentDataGridView.AutoGenerateColumns = false;
+            this.paymentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.paymentDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2});
-            this.typesDataGridView.DataSource = this.typesBindingSource;
-            this.typesDataGridView.Location = new System.Drawing.Point(12, 28);
-            this.typesDataGridView.Name = "typesDataGridView";
-            this.typesDataGridView.Size = new System.Drawing.Size(244, 220);
-            this.typesDataGridView.TabIndex = 1;
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            this.paymentDataGridView.DataSource = this.paymentBindingSource;
+            this.paymentDataGridView.Location = new System.Drawing.Point(12, 28);
+            this.paymentDataGridView.Name = "paymentDataGridView";
+            this.paymentDataGridView.Size = new System.Drawing.Size(443, 220);
+            this.paymentDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "typeID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "typeID";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "paymentID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "paymentID";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "type_description";
-            this.dataGridViewTextBoxColumn2.HeaderText = "type_description";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "card_number";
+            this.dataGridViewTextBoxColumn2.HeaderText = "card_number";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "security_code";
+            this.dataGridViewTextBoxColumn3.HeaderText = "security_code";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "expiration_date";
+            this.dataGridViewTextBoxColumn4.HeaderText = "expiration_date";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // newRecord
             // 
             this.newRecord.Location = new System.Drawing.Point(12, 255);
             this.newRecord.Name = "newRecord";
-            this.newRecord.Size = new System.Drawing.Size(116, 23);
+            this.newRecord.Size = new System.Drawing.Size(109, 23);
             this.newRecord.TabIndex = 2;
             this.newRecord.Text = "Новая запись";
             this.newRecord.UseVisualStyleBackColor = true;
@@ -249,32 +265,32 @@
             // 
             // save
             // 
-            this.save.Location = new System.Drawing.Point(134, 255);
+            this.save.Location = new System.Drawing.Point(237, 255);
             this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(121, 23);
+            this.save.Size = new System.Drawing.Size(75, 23);
             this.save.TabIndex = 3;
             this.save.Text = "Сохранить";
             this.save.UseVisualStyleBackColor = true;
             this.save.Click += new System.EventHandler(this.save_Click);
             // 
-            // TypesForm
+            // PaymentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(413, 313);
+            this.ClientSize = new System.Drawing.Size(468, 322);
             this.Controls.Add(this.save);
             this.Controls.Add(this.newRecord);
-            this.Controls.Add(this.typesDataGridView);
-            this.Controls.Add(this.typesBindingNavigator);
-            this.Name = "TypesForm";
-            this.Text = "Менеджер Типов";
-            this.Load += new System.EventHandler(this.TypesForm_Load);
+            this.Controls.Add(this.paymentDataGridView);
+            this.Controls.Add(this.paymentBindingNavigator);
+            this.Name = "PaymentForm";
+            this.Text = "Менеджер Оплаты";
+            this.Load += new System.EventHandler(this.PaymentForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.sPORTNUTRITIONDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.typesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.typesBindingNavigator)).EndInit();
-            this.typesBindingNavigator.ResumeLayout(false);
-            this.typesBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.typesDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paymentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paymentBindingNavigator)).EndInit();
+            this.paymentBindingNavigator.ResumeLayout(false);
+            this.paymentBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.paymentDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,10 +299,10 @@
         #endregion
 
         private SPORTNUTRITIONDataSet sPORTNUTRITIONDataSet;
-        private System.Windows.Forms.BindingSource typesBindingSource;
-        private SPORTNUTRITIONDataSetTableAdapters.TypesTableAdapter typesTableAdapter;
+        private System.Windows.Forms.BindingSource paymentBindingSource;
+        private SPORTNUTRITIONDataSetTableAdapters.PaymentTableAdapter paymentTableAdapter;
         private SPORTNUTRITIONDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator typesBindingNavigator;
+        private System.Windows.Forms.BindingNavigator paymentBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -298,10 +314,12 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton typesBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView typesDataGridView;
+        private System.Windows.Forms.ToolStripButton paymentBindingNavigatorSaveItem;
+        private System.Windows.Forms.DataGridView paymentDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.Button newRecord;
         private System.Windows.Forms.Button save;
     }

@@ -70,18 +70,21 @@
             this.brandsToolStripMenuItem.Name = "brandsToolStripMenuItem";
             this.brandsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.brandsToolStripMenuItem.Text = "Brands";
+            this.brandsToolStripMenuItem.Click += new System.EventHandler(this.brandsToolStripMenuItem_Click);
             // 
             // addresesToolStripMenuItem
             // 
             this.addresesToolStripMenuItem.Name = "addresesToolStripMenuItem";
             this.addresesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.addresesToolStripMenuItem.Text = "Addreses";
+            this.addresesToolStripMenuItem.Click += new System.EventHandler(this.addresesToolStripMenuItem_Click);
             // 
             // paymentsToolStripMenuItem
             // 
             this.paymentsToolStripMenuItem.Name = "paymentsToolStripMenuItem";
             this.paymentsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.paymentsToolStripMenuItem.Text = "Payments";
+            this.paymentsToolStripMenuItem.Click += new System.EventHandler(this.paymentsToolStripMenuItem_Click);
             // 
             // MainForm
             // 

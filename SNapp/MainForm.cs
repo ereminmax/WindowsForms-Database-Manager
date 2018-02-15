@@ -22,5 +22,23 @@ namespace SNapp
             TypesForm typesForm = new TypesForm();
             typesForm.Show();
         }
+
+        private void brandsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BrandForm brandForm = new BrandForm();
+            brandForm.Show();
+        }
+
+        private void addresesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddressForm addressForm = new AddressForm();
+            addressForm.Show();
+        }
+
+        private void paymentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PaymentForm paymentForm = new PaymentForm();
+            paymentForm.Show();
+        }
     }
 }
